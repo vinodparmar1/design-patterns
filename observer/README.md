@@ -1,13 +1,16 @@
-# Observer design pattern - a behavioral design pattern where one to many dependcy between objects so that one object changes state, all dependent object update themselves automatically
+# Observer design pattern 
+- a behavioral design pattern where one to many dependcy between objects so that one object changes state, all dependent object update themselves automatically
 
-# Problem: There are many objects dependent on an object's state change. All dependent object should be able to know the state update of the observed object and update themselves.
+# Problem: 
+There are many objects dependent on an object's state change. All dependent object should be able to know the state update of the observed object and update themselves.
 
 # Parts
 
 - Observee/Subject : The object of interest for which state updates are watched
 - Observer/Subscriber : The dependent objects which are interested in subject's state change
 
-# How: For the state update of interested object, instead of dependent object checking it's state all the time, it registers the dependent object to the observed object. Whenver observed object changes it's state it notify all dependent objects and allow them to update themselves.
+# How: 
+For the state update of interested object, instead of dependent object checking it's state all the time, it registers the dependent object to the observed object. Whenver observed object changes it's state it notify all dependent objects and allow them to update themselves.
 **Subject** 
 - hold the list of dependent objects (the list of subscribers),
 - it have notify or similar method to update all of it's observers/subscribers to know that the subject's state has changed.
