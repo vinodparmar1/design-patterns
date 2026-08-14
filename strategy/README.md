@@ -1,10 +1,13 @@
-# Strategy design pattern - 
+# Strategy design pattern
 
-## Problem: When an operation has multiple interchangeable implementations and the choice of which to use should be selectable usually at runtime, without changing the code that invokes it.
+## Problem: 
+When an operation has multiple interchangeable implementations and the choice of which to use should be selectable usually at runtime, without changing the code that invokes it.
 
-### How: It's a behavioural design pattern that defines a family of interchangeable algorithms using a common interface. The choice of algorithm is independent of the code that runs it.
+### How: 
+It's a behavioural design pattern that defines a family of interchangeable algorithms using a common interface. The choice of algorithm is independent of the code that runs it.
 
-### Modern C++: Runtime hierarchy can be replace by a `std::function<price(const Instrument&)>`: strategy is just a callable and no class hierarchy. Or when strategy is known at the compile time, a template parameter (`template <class Strategy`)can be used to eliminate the virtual dispatch making it compile time and avoiding runtime overheads
+### Modern C++: 
+Runtime hierarchy can be replace by a `std::function<price(const Instrument&)>`: strategy is just a callable and no class hierarchy. Or when strategy is known at the compile time, a template parameter (`template <class Strategy`)can be used to eliminate the virtual dispatch making it compile time and avoiding runtime overheads
 
 ### Parts:
 
