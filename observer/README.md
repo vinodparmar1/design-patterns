@@ -93,5 +93,5 @@ public:
 
 ```
 
-weak_ptr used here which solves the lifetime problem - if an observer get destroyed without unsubscribing from subject then observer object becomes dangling pointer on subject side and give undefined behaviour.
+weak_ptr used here which solves the lifetime problem - if an observer get destroyed without unsubscribing from subject then observer object becomes dangling pointer on subject side may cause undefined behaviour.
 
