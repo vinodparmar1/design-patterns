@@ -1,4 +1,5 @@
 # State design pattern
+- A behavioral design pattern
 - Allow an object to alter it's behaviour when internal state changes. The object will appear to change it's class.
 
 # problem
