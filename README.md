@@ -1,1 +1,11 @@
-# Design patterns - Explanations and their implementations in C++
+# Design patterns 
+Explanations and implementations in C++
+
+Creational
+- Factory
+
+Behavioural
+- Observer
+- state
+- command
+  
